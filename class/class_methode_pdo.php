@@ -11,7 +11,7 @@
     // exemple supposont qu'on n'a une table ''Eleve'' dans notre BD avec les chmaps 'nom', 'age', 'prenom'
     // exemple
 
-    $req = " SELECT nom, prenom, age  FROM Eleve";
+    $req = " SELECT Age, Nom  FROM Enseignat";
 
     $result = $DB->execute($req);
 

@@ -6,20 +6,19 @@
 
         /** @var PDO */
         public $conn;
-        private $ipConnexion = 'localhost';
-        private $BdName = 'nom de la bd';
-        private $login = 'login de connexion a mysql de wamp serveur';
-        private $password = 'password de connextion a ton mysql de wamp serveur';
-    
+
         /**
          * The builder is private to prevent initiation
          */
         private function __construct()
         {
             try {
-                include __DIR__ . '/../configFile/connexionconf.php';
     
                 // horrible magic variable
+                $ipConnexion='localhost';
+                $BdName ='Eleve';
+                $login = 'root';
+                $password ='';
                 $this->conn = new PDO('mysql:host=' . $ipConnexion . ';dbname=' . $BdName, $login, $password, [
                     PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES UTF8',
                 ]);
