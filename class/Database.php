@@ -74,7 +74,7 @@
     
         public function executeCount($sql, $parameters = [])
         {
-            $req = $this->conn->prepare($sql);
+           $req = $this->conn->prepare($sql);
             $req->execute($parameters);
             return $req->fetchColumn();
         }
