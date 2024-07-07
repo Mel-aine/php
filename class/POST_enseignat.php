@@ -5,8 +5,7 @@
 
 
     
-            $req="INSERT INTO Enseignat(Age,Nom)
-                    VALUES('18','pierre')";
+            $req="INSERT INTO Enseignat SET Age=1, Nom ='Teste'";
 
             
             
